@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Hamburger Menu Overlay</title>
+</head>
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><sub href="#">TYPEFACES</sub></li>
+            <li><btn href="#" class="btn">ERNESTINE ECKSTEIN</btn></li>
+            <li><btn href="#" class="btn">MARTIN WONG</btn></li>
+            <li><btn href="#" class="btn">WOMEN'S CAR REPAIR COLLECTIVE</btn></li>
+            <li><btn href="#" class="btn">LAVENDER MENACE</btn></li>
+            <li><btn href="#" class="btn">1989 VISUAL AIDS</btn></li>
+            <li><btn class="btn"><a href="demo.html">Martin Wong</a></btn></li> 
+                  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui">
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1.2.0/dist/aframe-master.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-orbit-controls-component-2@0.1.14/index.min.js"></script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    </body>
+    
+    
+    
+    
+    
+    
+    <body>
+  <div class="menu-wrap2">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+<li><info href="#">TYPEFACES</info></li>
+                   <li> <nav-type2>Martin Wong</nav-type2></li>
+     <li> <info>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</info></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+        </body>
+
+  <header class="showcase">
+    <div class="container showcase-inner">
+            <!--https://openbase.com/js/aframe-orbit-controls-component-2/documentation-->
+<a-scene class="fullscreen" vr-mode-ui="enabled: false">
+    
+    <!--PRELOAD ASSETS-->
+    <a-assets>
+        <a-asset-item id="box1" src="text14.gltf"></a-asset-item>
+    </a-assets>
+    <!--ADD ORBIT CONTROLS TO CAMERA ENTITY-->
+    <a-entity id="camera" camera="" position="0 0 5" orbit-controls="
+        target: #target;
+        rotateToSpeed: 0.04;
+        rotateTo: 0.172 0.140 1.797;
+        logPosition: true;
+        " rotation="" scale="" visible="">
+    </a-entity>
+    
+    <!--GROUP STUFF TOGETHER-->
+    <a-entity id="target" position="" rotation="" scale="" visible="">
+        <!--REFERENCE GLTF/GLB ASSETS BY ID-->
+        <a-entity gltf-model="#box1" position="0 -1 -1"></a-entity>
+        <a-entity gltf-model="#box2" position="-1 0 1"></a-entity>
+    </a-entity>
+    <!--<div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div><a-entity light="" data-aframe-default-light="" aframe-injected="" position="" rotation="" scale="" visible=""></a-entity>-->
+</a-scene>
+    
+<script>
+/*GET ALL ELEMENT WITH CLASSNAME "position-selector"*/   
+var buttons = document.querySelectorAll(".position-selector");
+
+/*TELL ALL THE BUTTONS WHICH EVENT ("click") TO LISTEN FOR AND WHAT TO DO*/    
+buttons.forEach(function (button) {
+  button.addEventListener("click", rotateTo);
+});
+/*FUNCTION TO TELL BUTTONS WHAT TO DO*/
+function rotateTo(e) {
+  var position = e.target.dataset.position;
+  document.querySelector("#camera").setAttribute("orbit-controls", "rotateTo", position);
+}
+</script>
+        
+        
+
+  
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css">
+
+    <div class="showcase4 showcase4-inner">
+        <a>READ MORE</a>
+    </div>
+
+        
+        
+        
+</body>
+</html>
+</html>
